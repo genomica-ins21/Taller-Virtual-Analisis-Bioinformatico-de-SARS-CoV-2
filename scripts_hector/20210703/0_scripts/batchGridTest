@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cd /mnt/articGrid
-ls /mnt/results_basecalling/pass | grep "barcode" | grep -o .........$ | xargs -P 3 /home/ins/0_scripts/singleGridTest
-cat $(find /mnt/articGrid/ -name *.consensus.fasta) > /mnt/articGrid/consensus_genomes.fasta
-
