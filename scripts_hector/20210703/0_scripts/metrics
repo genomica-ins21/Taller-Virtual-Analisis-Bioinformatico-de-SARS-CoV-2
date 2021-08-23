@@ -1,0 +1,21 @@
+#!/bin/bash
+
+## directorio artic con barcodes a procesar
+articPath="$1"
+
+# parametro archivo salida
+output_file="$2"
+
+filename="${articPath}/barcodes.txt"
+
+printf "%b" "Barcode;bases;Avg.depth" >> $output_file
+while read -r line; do
+    Barcode="$line"
+	echo $Barcode
+	numero_bases=$(samtools mpileup ${articPath}/${Barcode}/${Barcode}.sorted.bam | awk -v X="${MIN_COVERAGE_DEPTH}" '$4>=X' | wc -l)
+
+	promedio_soporte=$(samtools depth ${articPath}/${Barcode}/${Barcode}.sorted.bam | awk '{sum+=$3} END {print sum/NR}')
+
+	printf "%b" "\n${Barcode};${numero_bases};${promedio_soporte}" >> $output_file
+
+done < "$filename"
