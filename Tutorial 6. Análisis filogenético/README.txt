@@ -1,3 +1,7 @@
+Activar el módulo de iqtree
+  
+  conda activate iqtree
+
 Selección del modelo:
 
   iqtree -s aln_secuencias_sinUTRs.fas --seqtype DNA -m TESTONLY
