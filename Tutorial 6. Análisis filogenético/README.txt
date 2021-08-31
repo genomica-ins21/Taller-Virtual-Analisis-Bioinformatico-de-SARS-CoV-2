@@ -1,10 +1,10 @@
 Selección del modelo:
 
-  iqtree -s aln_secuencias_sinUTRs.fas --seqtype DNA -m TESTONLY
+  iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TESTONLY
 
 Correr filogenia:
 
-  iqtree -s aln_secuencias_sinUTRs.fas --seqtype DNA -m TIM2+F+I -B 1000
+  iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TIM2+F+I -bb 1000
   
 Salidas:
   iqtree genera varios archivos, entre ellos los del árbol filogenético en formato newick (archivo .treefile)
