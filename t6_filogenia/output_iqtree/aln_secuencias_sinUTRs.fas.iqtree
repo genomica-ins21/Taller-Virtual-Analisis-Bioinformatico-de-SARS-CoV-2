@@ -1,0 +1,306 @@
+IQ-TREE 2.0.3 built Dec 20 2020
+
+Input file name: aln_secuencias_sinUTRs.fas
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 194651
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 48 sequences with 29416 nucleotide sites
+Number of constant sites: 29104 (= 98.9394% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29104 (= 98.9394% of all sites)
+Number of parsimony informative sites: 159
+Number of distinct site patterns: 350
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM2+F+I
+
+Rate parameter R:
+
+  A-C: 0.3223
+  A-G: 1.5705
+  A-T: 0.3223
+  C-G: 1.0000
+  C-T: 4.5220
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2991
+  pi(C) = 0.1831
+  pi(G) = 0.1959
+  pi(T) = 0.3219
+
+Rate matrix Q:
+
+  A   -0.4647   0.05831    0.3039    0.1025
+  C   0.09521    -1.727    0.1935     1.438
+  G    0.4639    0.1809   -0.9628     0.318
+  T   0.09521     0.818    0.1935    -1.107
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9186
+
+ Category  Relative_rate  Proportion
+  0         0              0.9186
+  1         12.29          0.08139
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -43137.5126 (s.e. 178.1716)
+Unconstrained log-likelihood (without tree): -63489.1524
+Number of free parameters (#branches + #model parameters): 100
+Akaike information criterion (AIC) score: 86475.0253
+Corrected Akaike information criterion (AICc) score: 86475.7143
+Bayesian information criterion (BIC) score: 87303.9547
+
+Total tree length (sum of branch lengths): 0.0116
+Sum of internal branch lengths: 0.0056 (48.5525% of tree length)
+
+WARNING: 19 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'NC_045512_2_Wuhan-Hu-1_complete_genome' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**NC_045512_2_Wuhan-Hu-1_complete_genome
+|
+|                            +----------------------------hCoV-19/Colombia/SAN-UW-651275441501/2020|EPI_ISL_1324144|2020-11-30
+|                      +-----| (94)
+|                      |     +------hCoV-19/Colombia/GUR-37097/2020|EPI_ISL_941995|2020-06-23
+|                   +**| (15)
+|                   |  |         +-------hCoV-19/Colombia/SAN-576900-002/2020|EPI_ISL_1576835|2020-10-25
+|                   |  |  +------| (99)
+|                   |  |  |      +--------hCoV-19/Colombia/SAN-576900-007-RNA/2020|EPI_ISL_1577182|2020-12-03
+|                   |  +**| (85)
+|                   |     |                           +---hCoV-19/Colombia/MET-INS-VG-5025/2021|EPI_ISL_3459415|2021-07-20
+|                   |     +---------------------------| (100)
+|                   |                                 |  +---hCoV-19/Colombia/VAC-INS-VG-4874/2021|EPI_ISL_3459416|2021-07-01
+|                   |                                 +--| (94)
+|                   |                                    +--hCoV-19/Colombia/VAC-INS-VG-4872/2021|EPI_ISL_3459417|2021-07-10
+|                +**| (6)
+|                |  +**hCoV-19/Colombia/NAR-INS-103313/2020|EPI_ISL_526956|2020-04-28
+|             +**| (6)
+|             |  |                                      +--------hCoV-19/Colombia/DC-UANDES-G015313/2021|EPI_ISL_1626613|2021-03-26
+|             |  |     +--------------------------------| (100)
+|             |  |     |                                |     +-----hCoV-19/Colombia/DC-UANDES-G015158/2021|EPI_ISL_1626615|2021-03-24
+|             |  |     |                                |  +**| (10)
+|             |  |     |                                |  |  +----hCoV-19/Colombia/ARA-INS-VG-2151/2021|EPI_ISL_1805639|2021-04-09
+|             |  |     |                                +**| (16)
+|             |  |     |                                   |     +--hCoV-19/Colombia/DC-UANDES-G015436/2021|EPI_ISL_1626616|2021-03-29
+|             |  |     |                                   |  +--| (92)
+|             |  |     |                                   |  |  +--hCoV-19/Colombia/DC-UANDES-309026/2021|EPI_ISL_1626618|2021-03-25
+|             |  |     |                                   +**| (11)
+|             |  |     |                                      +-----hCoV-19/Colombia/DC-UANDES-339014/2021|EPI_ISL_1626619|2021-04-03
+|             |  |  +--| (65)
+|             |  |  |  |                              +--------------hCoV-19/Colombia/CUN-S11/2021|EPI_ISL_2339776|2021-04-16
+|             |  |  |  |                           +--| (93)
+|             |  |  |  |                           |  |      +--hCoV-19/Colombia/CAL-INS-VG-2795/2021|EPI_ISL_2674296|2021-04-29
+|             |  |  |  |                           |  |   +--| (93)
+|             |  |  |  |                           |  |   |  +--hCoV-19/Colombia/ANT-PRO-LDSP30/2021|EPI_ISL_3347177|2021-04-26
+|             |  |  |  |                           |  +---| (98)
+|             |  |  |  |                           |      +----hCoV-19/Colombia/COV-VG-3635/2021|EPI_ISL_3355512|2021-04-17
+|             |  |  |  +---------------------------| (100)
+|             |  |  |                              +-------hCoV-19/Colombia/ANT-PRO-LDSP41/2021|EPI_ISL_3347175|2021-04-27
+|             |  +**| (6)
+|             |     +--hCoV-19/Colombia/GUR-06614/2020|EPI_ISL_941983|2020-04-23
+|         +---| (99)
+|         |   |  +--hCoV-19/Colombia/GUR-06537/2020|EPI_ISL_941981|2020-04-30
+|         |   +**| (12)
+|         |      +-------hCoV-19/Colombia/GVI-133304/2020|EPI_ISL_941986|2020-05-29
+|      +**| (19)
+|      |  |           +--hCoV-19/Colombia/DC-INS-79190/2020|EPI_ISL_456120|2020-03-12
+|      |  |        +**| (21)
+|      |  |        |  +--hCoV-19/Colombia/NSA-INS-80656/2020|EPI_ISL_456126|2020-03-18
+|      |  |     +**| (11)
+|      |  |     |  +--hCoV-19/Colombia/RIS-INS-80245/2020|EPI_ISL_456155|2020-03-16
+|      |  |  +**| (29)
+|      |  |  |  |        +--hCoV-19/Colombia/VAC-INS-79943/2020|EPI_ISL_456138|2020-03-16
+|      |  |  |  |     +**| (26)
+|      |  |  |  |     |  +**hCoV-19/Colombia/ATL-INS-79743/2020|EPI_ISL_456145|2020-03-14
+|      |  |  |  |  +**| (16)
+|      |  |  |  |  |  +**hCoV-19/Colombia/NSA-NS-79852/2020|EPI_ISL_653752|2020-03-14
+|      |  |  |  +**| (28)
+|      |  |  |     +**hCoV-19/Colombia/ANT-INS-82457/2020|EPI_ISL_456146|2020-03-20
+|      |  +--| (73)
+|      |     +--hCoV-19/Colombia/VAC-INS-79965/2020|EPI_ISL_456150|2020-03-15
+|   +**| (13)
+|   |  |                                       +---hCoV-19/Colombia/DC-INS-VG-2114/2021|EPI_ISL_1820962|2021-04-12
+|   |  |                                    +**| (77)
+|   |  |                                    |  +--hCoV-19/Colombia/ATL-INS-VG-2327/2021|EPI_ISL_2158355|2021-04-14
+|   |  |        +---------------------------| (100)
+|   |  |        |                           |  +--hCoV-19/Colombia/ANT-CWOHC-VG-SEC00213E/2021|EPI_ISL_1960080|2021-04-09
+|   |  |        |                           +--| (65)
+|   |  |        |                              |  +**hCoV-19/Colombia/ANT-CWOHC-VG-SEC00262B/2021|EPI_ISL_1960081|2021-04-10
+|   |  |        |                              +--| (98)
+|   |  |        |                                 +---hCoV-19/Colombia/ANT-CWOHC-VG-SEC00276P/2021|EPI_ISL_1960082|2021-04-22
+|   |  |  +-----| (89)
+|   |  |  |     |                        +----hCoV-19/Colombia/ANT-CWOHC-VG-SEC00641Q/2021|EPI_ISL_2621148|2021-05-13
+|   |  |  |     |                     +**| (74)
+|   |  |  |     |                     |  |  +---hCoV-19/Colombia/CAQ-INS-VG-4836/2021|EPI_ISL_3459389|2021-07-14
+|   |  |  |     |                     |  +--| (95)
+|   |  |  |     |                     |     +-------------hCoV-19/Colombia/HUI-INS-VG-4802/2021|EPI_ISL_3459390|2021-07-08
+|   |  |  |     |                 +---| (97)
+|   |  |  |     |                 |   +----hCoV-19/Colombia/CVU4000/2021|EPI_ISL_3491814|2021-05-18
+|   |  |  |     +-----------------| (100)
+|   |  |  |                       +----------hCoV-19/Colombia/CVU3913/2021|EPI_ISL_3491806|2021-05-14
+|   |  +--| (66)
+|   |     |  +**hCoV-19/Colombia/VAC-INS-82320/2020|EPI_ISL_456151|2020-03-19
+|   |     +--| (90)
+|   |        +**hCoV-19/Colombia/RIS-INS-81402/2020|EPI_ISL_497736|2020-03-18
++---| (99)
+|   |                                      +**hCoV-19/Colombia/CUN-817544/2021|EPI_ISL_3673674|2021-07-16
+|   |                                  +---| (95)
+|   |                                  |   +**hCoV-19/Colombia/CUN-817545/2021|EPI_ISL_3673675|2021-07-16
+|   +----------------------------------| (100)
+|                                      +-------------------hCoV-19/Colombia/CUN-GO28045/2021|EPI_ISL_3673677|2021-07-19
+|
+|   +--hCoV-19/Colombia/ANT-INS-79256/2020|EPI_ISL_417924|2020-03-11
++---| (98)
+    +----hCoV-19/Colombia/TOL-GUV-92052/2020|EPI_ISL_447757|2020-03-31
+
+Tree in newick format:
+
+(NC_045512_2_Wuhan-Hu-1_complete_genome:0.0000010000,((((((((hCoV-19/Colombia/SAN-UW-651275441501/2020|EPI_ISL_1324144|2020-11-30:0.0007145774,hCoV-19/Colombia/GUR-37097/2020|EPI_ISL_941995|2020-06-23:0.0001700141)94:0.0001675028,((hCoV-19/Colombia/SAN-576900-002/2020|EPI_ISL_1576835|2020-10-25:0.0002021708,hCoV-19/Colombia/SAN-576900-007-RNA/2020|EPI_ISL_1577182|2020-12-03:0.0002362732)99:0.0001700141,(hCoV-19/Colombia/MET-INS-VG-5025/2021|EPI_ISL_3459415|2021-07-20:0.0001019992,(hCoV-19/Colombia/VAC-INS-VG-4874/2021|EPI_ISL_3459416|2021-07-01:0.0001019992,hCoV-19/Colombia/VAC-INS-VG-4872/2021|EPI_ISL_3459417|2021-07-10:0.0000679964)94:0.0000339966)100:0.0006818638)85:0.0000314653)15:0.0000010000,hCoV-19/Colombia/NAR-INS-103313/2020|EPI_ISL_526956|2020-04-28:0.0000010000)6:0.0000010000,(((hCoV-19/Colombia/DC-UANDES-G015313/2021|EPI_ISL_1626613|2021-03-26:0.0002357507,((hCoV-19/Colombia/DC-UANDES-G015158/2021|EPI_ISL_1626615|2021-03-24:0.0001683410,hCoV-19/Colombia/ARA-INS-VG-2151/2021|EPI_ISL_1805639|2021-04-09:0.0001360051)10:0.0000010000,((hCoV-19/Colombia/DC-UANDES-G015436/2021|EPI_ISL_1626616|2021-03-29:0.0000339966,hCoV-19/Colombia/DC-UANDES-309026/2021|EPI_ISL_1626618|2021-03-25:0.0000679964)92:0.0000339966,hCoV-19/Colombia/DC-UANDES-339014/2021|EPI_ISL_1626619|2021-04-03:0.0001683469)11:0.0000010000)16:0.0000010000)100:0.0008156812,((hCoV-19/Colombia/CUN-S11/2021|EPI_ISL_2339776|2021-04-16:0.0003760228,((hCoV-19/Colombia/CAL-INS-VG-2795/2021|EPI_ISL_2674296|2021-04-29:0.0000723348,hCoV-19/Colombia/ANT-PRO-LDSP30/2021|EPI_ISL_3347177|2021-04-26:0.0000896747)93:0.0000448245,hCoV-19/Colombia/COV-VG-3635/2021|EPI_ISL_3355512|2021-04-17:0.0001360051)98:0.0001009733)93:0.0000354872,hCoV-19/Colombia/ANT-PRO-LDSP41/2021|EPI_ISL_3347175|2021-04-27:0.0002040261)100:0.0006784350)65:0.0000339966,hCoV-19/Colombia/GUR-06614/2020|EPI_ISL_941983|2020-04-23:0.0000339966)6:0.0000010000)6:0.0000010000,(hCoV-19/Colombia/GUR-06537/2020|EPI_ISL_941981|2020-04-30:0.0000679964,hCoV-19/Colombia/GVI-133304/2020|EPI_ISL_941986|2020-05-29:0.0002019061)12:0.0000010000)99:0.0001008427,((((hCoV-19/Colombia/DC-INS-79190/2020|EPI_ISL_456120|2020-03-12:0.0000339966,hCoV-19/Colombia/NSA-INS-80656/2020|EPI_ISL_456126|2020-03-18:0.0000339966)21:0.0000010000,hCoV-19/Colombia/RIS-INS-80245/2020|EPI_ISL_456155|2020-03-16:0.0000339966)11:0.0000010000,(((hCoV-19/Colombia/VAC-INS-79943/2020|EPI_ISL_456138|2020-03-16:0.0000679964,hCoV-19/Colombia/ATL-INS-79743/2020|EPI_ISL_456145|2020-03-14:0.0000010000)26:0.0000010000,hCoV-19/Colombia/NSA-NS-79852/2020|EPI_ISL_653752|2020-03-14:0.0000010000)16:0.0000010000,hCoV-19/Colombia/ANT-INS-82457/2020|EPI_ISL_456146|2020-03-20:0.0000010000)28:0.0000010000)29:0.0000010000,hCoV-19/Colombia/VAC-INS-79965/2020|EPI_ISL_456150|2020-03-15:0.0000679964)73:0.0000339966)19:0.0000010000,((((hCoV-19/Colombia/DC-INS-VG-2114/2021|EPI_ISL_1820962|2021-04-12:0.0001019992,hCoV-19/Colombia/ATL-INS-VG-2327/2021|EPI_ISL_2158355|2021-04-14:0.0000679964)77:0.0000010000,(hCoV-19/Colombia/ANT-CWOHC-VG-SEC00213E/2021|EPI_ISL_1960080|2021-04-09:0.0000679964,(hCoV-19/Colombia/ANT-CWOHC-VG-SEC00262B/2021|EPI_ISL_1960081|2021-04-10:0.0000010000,hCoV-19/Colombia/ANT-CWOHC-VG-SEC00276P/2021|EPI_ISL_1960082|2021-04-22:0.0001019992)98:0.0000679964)65:0.0000339966)100:0.0006784908,(((hCoV-19/Colombia/ANT-CWOHC-VG-SEC00641Q/2021|EPI_ISL_2621148|2021-05-13:0.0001394708,(hCoV-19/Colombia/CAQ-INS-VG-4836/2021|EPI_ISL_3459389|2021-07-14:0.0001019992,hCoV-19/Colombia/HUI-INS-VG-4802/2021|EPI_ISL_3459390|2021-07-08:0.0003386639)95:0.0000679964)74:0.0000010000,hCoV-19/Colombia/CVU4000/2021|EPI_ISL_3491814|2021-05-18:0.0001360051)97:0.0001146779,hCoV-19/Colombia/CVU3913/2021|EPI_ISL_3491806|2021-05-14:0.0002735821)100:0.0004473397)89:0.0001580519,(hCoV-19/Colombia/VAC-INS-82320/2020|EPI_ISL_456151|2020-03-19:0.0000010000,hCoV-19/Colombia/RIS-INS-81402/2020|EPI_ISL_497736|2020-03-18:0.0000010000)90:0.0000339966)66:0.0000339966)13:0.0000010000,((hCoV-19/Colombia/CUN-817544/2021|EPI_ISL_3673674|2021-07-16:0.0000010000,hCoV-19/Colombia/CUN-817545/2021|EPI_ISL_3673675|2021-07-16:0.0000010000)95:0.0001003071,hCoV-19/Colombia/CUN-GO28045/2021|EPI_ISL_3673677|2021-07-19:0.0004827758)100:0.0008629141)99:0.0001007854,(hCoV-19/Colombia/ANT-INS-79256/2020|EPI_ISL_417924|2020-03-11:0.0000679964,hCoV-19/Colombia/TOL-GUV-92052/2020|EPI_ISL_447757|2020-03-31:0.0001346729)98:0.0001007813);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -43138.349744
+Robinson-Foulds distance between ML tree and consensus tree: 22
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--NC_045512_2_Wuhan-Hu-1_complete_genome
+|
+|                      +----------------------------hCoV-19/Colombia/SAN-UW-651275441501/2020|EPI_ISL_1324144|2020-11-30
+|                +-----| (94)
+|                |     +------hCoV-19/Colombia/GUR-37097/2020|EPI_ISL_941995|2020-06-23
+|             +--| (16)
+|             |  +--hCoV-19/Colombia/GUR-06537/2020|EPI_ISL_941981|2020-04-30
+|          +--| (17)
+|          |  |               +-------hCoV-19/Colombia/SAN-576900-002/2020|EPI_ISL_1576835|2020-10-25
+|          |  |        +------| (99)
+|          |  |        |      +--------hCoV-19/Colombia/SAN-576900-007-RNA/2020|EPI_ISL_1577182|2020-12-03
+|          |  |     +--| (85)
+|          |  |     |  |                           +---hCoV-19/Colombia/MET-INS-VG-5025/2021|EPI_ISL_3459415|2021-07-20
+|          |  |     |  +---------------------------| (100)
+|          |  |     |                              |  +---hCoV-19/Colombia/VAC-INS-VG-4874/2021|EPI_ISL_3459416|2021-07-01
+|          |  |     |                              +--| (94)
+|          |  |     |                                 +--hCoV-19/Colombia/VAC-INS-VG-4872/2021|EPI_ISL_3459417|2021-07-10
+|          |  |  +--| (24)
+|          |  |  |  |                                            +--------hCoV-19/Colombia/DC-UANDES-G015313/2021|EPI_ISL_1626613|2021-03-26
+|          |  |  |  |                                         +--| (43)
+|          |  |  |  |                                         |  +-----hCoV-19/Colombia/DC-UANDES-339014/2021|EPI_ISL_1626619|2021-04-03
+|          |  |  |  |                                      +--| (31)
+|          |  |  |  |                                      |  |  +--hCoV-19/Colombia/DC-UANDES-G015436/2021|EPI_ISL_1626616|2021-03-29
+|          |  |  |  |                                      |  +--| (92)
+|          |  |  |  |                                      |     +--hCoV-19/Colombia/DC-UANDES-309026/2021|EPI_ISL_1626618|2021-03-25
+|          |  |  |  |                                   +--| (35)
+|          |  |  |  |                                   |  +-----hCoV-19/Colombia/DC-UANDES-G015158/2021|EPI_ISL_1626615|2021-03-24
+|          |  |  |  |  +--------------------------------| (100)
+|          |  |  |  |  |                                +----hCoV-19/Colombia/ARA-INS-VG-2151/2021|EPI_ISL_1805639|2021-04-09
+|          |  |  |  +--| (65)
+|          |  |  |     |                              +--------------hCoV-19/Colombia/CUN-S11/2021|EPI_ISL_2339776|2021-04-16
+|          |  |  |     |                           +--| (93)
+|          |  |  |     |                           |  |      +--hCoV-19/Colombia/CAL-INS-VG-2795/2021|EPI_ISL_2674296|2021-04-29
+|          |  |  |     |                           |  |   +--| (93)
+|          |  |  |     |                           |  |   |  +--hCoV-19/Colombia/ANT-PRO-LDSP30/2021|EPI_ISL_3347177|2021-04-26
+|          |  |  |     |                           |  +---| (98)
+|          |  |  |     |                           |      +----hCoV-19/Colombia/COV-VG-3635/2021|EPI_ISL_3355512|2021-04-17
+|          |  |  |     +---------------------------| (100)
+|          |  |  |                                 +-------hCoV-19/Colombia/ANT-PRO-LDSP41/2021|EPI_ISL_3347175|2021-04-27
+|          |  +--| (14)
+|          |     +--hCoV-19/Colombia/NAR-INS-103313/2020|EPI_ISL_526956|2020-04-28
+|       +--| (15)
+|       |  +-------hCoV-19/Colombia/GVI-133304/2020|EPI_ISL_941986|2020-05-29
+|   +---| (99)
+|   |   +--hCoV-19/Colombia/GUR-06614/2020|EPI_ISL_941983|2020-04-23
++---| (99)
+|   |                                             +---hCoV-19/Colombia/DC-INS-VG-2114/2021|EPI_ISL_1820962|2021-04-12
+|   |                                          +--| (77)
+|   |                                          |  +--hCoV-19/Colombia/ATL-INS-VG-2327/2021|EPI_ISL_2158355|2021-04-14
+|   |              +---------------------------| (100)
+|   |              |                           |  +--hCoV-19/Colombia/ANT-CWOHC-VG-SEC00213E/2021|EPI_ISL_1960080|2021-04-09
+|   |              |                           +--| (65)
+|   |              |                              |  +--hCoV-19/Colombia/ANT-CWOHC-VG-SEC00262B/2021|EPI_ISL_1960081|2021-04-10
+|   |              |                              +--| (98)
+|   |              |                                 +---hCoV-19/Colombia/ANT-CWOHC-VG-SEC00276P/2021|EPI_ISL_1960082|2021-04-22
+|   |        +-----| (89)
+|   |        |     |                        +----hCoV-19/Colombia/ANT-CWOHC-VG-SEC00641Q/2021|EPI_ISL_2621148|2021-05-13
+|   |        |     |                     +--| (74)
+|   |        |     |                     |  |  +---hCoV-19/Colombia/CAQ-INS-VG-4836/2021|EPI_ISL_3459389|2021-07-14
+|   |        |     |                     |  +--| (95)
+|   |        |     |                     |     +-------------hCoV-19/Colombia/HUI-INS-VG-4802/2021|EPI_ISL_3459390|2021-07-08
+|   |        |     |                 +---| (97)
+|   |        |     |                 |   +----hCoV-19/Colombia/CVU4000/2021|EPI_ISL_3491814|2021-05-18
+|   |        |     +-----------------| (100)
+|   |        |                       +----------hCoV-19/Colombia/CVU3913/2021|EPI_ISL_3491806|2021-05-14
+|   |     +--| (66)
+|   |     |  |  +--hCoV-19/Colombia/VAC-INS-82320/2020|EPI_ISL_456151|2020-03-19
+|   |     |  +--| (90)
+|   |     |     +--hCoV-19/Colombia/RIS-INS-81402/2020|EPI_ISL_497736|2020-03-18
+|   |  +--| (31)
+|   |  |  |                                      +--hCoV-19/Colombia/CUN-817544/2021|EPI_ISL_3673674|2021-07-16
+|   |  |  |                                  +---| (95)
+|   |  |  |                                  |   +--hCoV-19/Colombia/CUN-817545/2021|EPI_ISL_3673675|2021-07-16
+|   |  |  +----------------------------------| (100)
+|   |  |                                     +------------------hCoV-19/Colombia/CUN-GO28045/2021|EPI_ISL_3673677|2021-07-19
+|   +--| (38)
+|      |           +--hCoV-19/Colombia/DC-INS-79190/2020|EPI_ISL_456120|2020-03-12
+|      |        +--| (21)
+|      |        |  +--hCoV-19/Colombia/NSA-INS-80656/2020|EPI_ISL_456126|2020-03-18
+|      |     +--| (30)
+|      |     |  |        +--hCoV-19/Colombia/VAC-INS-79943/2020|EPI_ISL_456138|2020-03-16
+|      |     |  |     +--| (26)
+|      |     |  |     |  +--hCoV-19/Colombia/ATL-INS-79743/2020|EPI_ISL_456145|2020-03-14
+|      |     |  |  +--| (16)
+|      |     |  |  |  +--hCoV-19/Colombia/NSA-NS-79852/2020|EPI_ISL_653752|2020-03-14
+|      |     |  +--| (28)
+|      |     |     +--hCoV-19/Colombia/ANT-INS-82457/2020|EPI_ISL_456146|2020-03-20
+|      |  +--| (29)
+|      |  |  +--hCoV-19/Colombia/RIS-INS-80245/2020|EPI_ISL_456155|2020-03-16
+|      +--| (73)
+|         +--hCoV-19/Colombia/VAC-INS-79965/2020|EPI_ISL_456150|2020-03-15
+|
+|   +--hCoV-19/Colombia/ANT-INS-79256/2020|EPI_ISL_417924|2020-03-11
++---| (98)
+    +----hCoV-19/Colombia/TOL-GUV-92052/2020|EPI_ISL_447757|2020-03-31
+
+
+Consensus tree in newick format: 
+
+(NC_045512_2_Wuhan-Hu-1_complete_genome:0.0000020311,((((((hCoV-19/Colombia/SAN-UW-651275441501/2020|EPI_ISL_1324144|2020-11-30:0.0007149936,hCoV-19/Colombia/GUR-37097/2020|EPI_ISL_941995|2020-06-23:0.0001709783)94:0.0001676957,hCoV-19/Colombia/GUR-06537/2020|EPI_ISL_941981|2020-04-30:0.0000679934)16:0.0000020311,((((hCoV-19/Colombia/SAN-576900-002/2020|EPI_ISL_1576835|2020-10-25:0.0002024666,hCoV-19/Colombia/SAN-576900-007-RNA/2020|EPI_ISL_1577182|2020-12-03:0.0002365865)99:0.0001709580,(hCoV-19/Colombia/MET-INS-VG-5025/2021|EPI_ISL_3459415|2021-07-20:0.0001025795,(hCoV-19/Colombia/VAC-INS-VG-4874/2021|EPI_ISL_3459416|2021-07-01:0.0001019924,hCoV-19/Colombia/VAC-INS-VG-4872/2021|EPI_ISL_3459417|2021-07-10:0.0000679934)94:0.0000339959)100:0.0006819882)85:0.0000320132,(((((hCoV-19/Colombia/DC-UANDES-G015313/2021|EPI_ISL_1626613|2021-03-26:0.0002361184,hCoV-19/Colombia/DC-UANDES-339014/2021|EPI_ISL_1626619|2021-04-03:0.0001685944)43:0.0000020311,(hCoV-19/Colombia/DC-UANDES-G015436/2021|EPI_ISL_1626616|2021-03-29:0.0000339959,hCoV-19/Colombia/DC-UANDES-309026/2021|EPI_ISL_1626618|2021-03-25:0.0000679934)92:0.0000339959)31:0.0000020311,hCoV-19/Colombia/DC-UANDES-G015158/2021|EPI_ISL_1626615|2021-03-24:0.0001685991)35:0.0000020311,hCoV-19/Colombia/ARA-INS-VG-2151/2021|EPI_ISL_1805639|2021-04-09:0.0001356483)100:0.0008166558,((hCoV-19/Colombia/CUN-S11/2021|EPI_ISL_2339776|2021-04-16:0.0003766065,((hCoV-19/Colombia/CAL-INS-VG-2795/2021|EPI_ISL_2674296|2021-04-29:0.0000732319,hCoV-19/Colombia/ANT-PRO-LDSP30/2021|EPI_ISL_3347177|2021-04-26:0.0000903727)93:0.0000458291,hCoV-19/Colombia/COV-VG-3635/2021|EPI_ISL_3355512|2021-04-17:0.0001355543)98:0.0001019924)93:0.0000355490,hCoV-19/Colombia/ANT-PRO-LDSP41/2021|EPI_ISL_3347175|2021-04-27:0.0002033576)100:0.0006792692)65:0.0000339959)24:0.0000020311,hCoV-19/Colombia/NAR-INS-103313/2020|EPI_ISL_526956|2020-04-28:0.0000020311)14:0.0000020311)17:0.0000020311,hCoV-19/Colombia/GVI-133304/2020|EPI_ISL_941986|2020-05-29:0.0002021613)15:0.0000020311,hCoV-19/Colombia/GUR-06614/2020|EPI_ISL_941983|2020-04-23:0.0000339959)99:0.0001009769,((((((hCoV-19/Colombia/DC-INS-VG-2114/2021|EPI_ISL_1820962|2021-04-12:0.0001019924,hCoV-19/Colombia/ATL-INS-VG-2327/2021|EPI_ISL_2158355|2021-04-14:0.0000679934)77:0.0000020311,(hCoV-19/Colombia/ANT-CWOHC-VG-SEC00213E/2021|EPI_ISL_1960080|2021-04-09:0.0000679934,(hCoV-19/Colombia/ANT-CWOHC-VG-SEC00262B/2021|EPI_ISL_1960081|2021-04-10:0.0000020311,hCoV-19/Colombia/ANT-CWOHC-VG-SEC00276P/2021|EPI_ISL_1960082|2021-04-22:0.0001019924)98:0.0000679776)65:0.0000339959)100:0.0006786704,(((hCoV-19/Colombia/ANT-CWOHC-VG-SEC00641Q/2021|EPI_ISL_2621148|2021-05-13:0.0001397055,(hCoV-19/Colombia/CAQ-INS-VG-4836/2021|EPI_ISL_3459389|2021-07-14:0.0001019924,hCoV-19/Colombia/HUI-INS-VG-4802/2021|EPI_ISL_3459390|2021-07-08:0.0003400297)95:0.0000679934)74:0.0000020468,hCoV-19/Colombia/CVU4000/2021|EPI_ISL_3491814|2021-05-18:0.0001359930)97:0.0001127106,hCoV-19/Colombia/CVU3913/2021|EPI_ISL_3491806|2021-05-14:0.0002741428)100:0.0004475532)89:0.0001580326,(hCoV-19/Colombia/VAC-INS-82320/2020|EPI_ISL_456151|2020-03-19:0.0000020311,hCoV-19/Colombia/RIS-INS-81402/2020|EPI_ISL_497736|2020-03-18:0.0000020311)90:0.0000344967)66:0.0000339959,((hCoV-19/Colombia/CUN-817544/2021|EPI_ISL_3673674|2021-07-16:0.0000020311,hCoV-19/Colombia/CUN-817545/2021|EPI_ISL_3673675|2021-07-16:0.0000020311)95:0.0001004470,hCoV-19/Colombia/CUN-GO28045/2021|EPI_ISL_3673677|2021-07-19:0.0004831399)100:0.0008636880)31:0.0000020311,((((hCoV-19/Colombia/DC-INS-79190/2020|EPI_ISL_456120|2020-03-12:0.0000339959,hCoV-19/Colombia/NSA-INS-80656/2020|EPI_ISL_456126|2020-03-18:0.0000339959)21:0.0000020311,(((hCoV-19/Colombia/VAC-INS-79943/2020|EPI_ISL_456138|2020-03-16:0.0000679934,hCoV-19/Colombia/ATL-INS-79743/2020|EPI_ISL_456145|2020-03-14:0.0000020311)26:0.0000020311,hCoV-19/Colombia/NSA-NS-79852/2020|EPI_ISL_653752|2020-03-14:0.0000020311)16:0.0000020311,hCoV-19/Colombia/ANT-INS-82457/2020|EPI_ISL_456146|2020-03-20:0.0000020311)28:0.0000020311)30:0.0000020311,hCoV-19/Colombia/RIS-INS-80245/2020|EPI_ISL_456155|2020-03-16:0.0000339959)29:0.0000020311,hCoV-19/Colombia/VAC-INS-79965/2020|EPI_ISL_456150|2020-03-15:0.0000679934)73:0.0000339959)38:0.0000020311)99:0.0001009158,(hCoV-19/Colombia/ANT-INS-79256/2020|EPI_ISL_417924|2020-03-11:0.0000679934,hCoV-19/Colombia/TOL-GUV-92052/2020|EPI_ISL_447757|2020-03-31:0.0001348425)98:0.0001009138);
+
+TIME STAMP
+----------
+
+Date and time: Thu Aug 26 02:19:59 2021
+Total CPU time used: 28.910519 seconds (0h:0m:28s)
+Total wall-clock time used: 23.72502533 seconds (0h:0m:23s)
+
