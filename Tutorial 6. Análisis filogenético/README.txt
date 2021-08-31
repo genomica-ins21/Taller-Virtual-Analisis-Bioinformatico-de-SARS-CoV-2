@@ -1,3 +1,7 @@
+Descargar alineamiento de las secuencias:
+  
+  wget https://github.com/genomica-ins21/Taller-Virtual-Analisis-Bioinformatico-de-SARS-CoV-2/blob/main/Tutorial%206.%20An%C3%A1lisis%20filogen%C3%A9tico/aln_secuencias_sinUTRs.fas
+
 Selección del modelo:
 
   iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TESTONLY
