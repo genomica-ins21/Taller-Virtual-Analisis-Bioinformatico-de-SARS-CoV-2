@@ -1,14 +1,16 @@
 Descargar alineamiento de las secuencias:
   
-  wget https://github.com/genomica-ins21/Taller-Virtual-Analisis-Bioinformatico-de-SARS-CoV-2/blob/main/Tutorial%206.%20An%C3%A1lisis%20filogen%C3%A9tico/aln_secuencias_sinUTRs.fas
+  wget https://github.com/genomica-ins21/Taller-Virtual-Analisis-Bioinformatico-de-SARS-CoV-2/raw/main/t6_filogenia/aln_secuencias_sinUTRs.fas
 
 Selección del modelo:
-
+  el comando es: iqtree -s {ruta archivo fasta alineamiento} -st DNA -m TSETONLY
+  
   iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TESTONLY
 
 Correr filogenia:
-
-  iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TIM2+F+I -bb 1000
+  el comando es: iqtree -s {ruta archivo fasta alineamiento} -st DNA -m {modelo} -bb {núm bootstrap} -redo
+  
+  iqtree -s aln_secuencias_sinUTRs.fas -st DNA -m TIM2+F+I -bb 1000 -redo
   
 Salidas:
   iqtree genera varios archivos, entre ellos los del árbol filogenético en formato newick (archivo .treefile)
