@@ -18,7 +18,7 @@ Salidas:
  
 Visualizar árbol:
 
-  En microreact.org; crear cuenta gratuita
-  En la pestaña UPLOAD cargar le archivo del árbol con extensión .nwk, y cargar el archivo de metadatos
+  Entrar a microreact.org;
+  En la pestaña UPLOAD cargar le archivo del árbol con extensión .nwk, y cargar el archivo de metadatos con extensión .csv
   Pueden explorar el ejemplo interactivo:
     https://microreact.org/project/4eDYoziLscEJhQFF7y6YPB/7f8bf1e8
