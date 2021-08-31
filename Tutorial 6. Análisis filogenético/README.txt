@@ -1,7 +1,3 @@
-Activar el módulo de iqtree
-  
-  conda activate iqtree
-
 Selección del modelo:
 
   iqtree -s aln_secuencias_sinUTRs.fas --seqtype DNA -m TESTONLY
@@ -9,6 +5,10 @@ Selección del modelo:
 Correr filogenia:
 
   iqtree -s aln_secuencias_sinUTRs.fas --seqtype DNA -m TIM2+F+I -B 1000
+  
+Salidas:
+  iqtree genera varios archivos, entre ellos los del árbol filogenético en formato newick (archivo .treefile)
+  para la sección de visualización debemos descargar este archivo y cambiar su extensión a .nwk
  
 Visualizar árbol:
 
